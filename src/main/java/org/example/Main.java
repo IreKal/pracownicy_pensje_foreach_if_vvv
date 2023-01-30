@@ -55,7 +55,7 @@ public class Main {
 
 
           //Pracownik pracownik = new Pracownik();
-           System.out.println("Imie " + imie + "Nazwisko "+ nazwisko + "wynagrodzenie " + LiczbaPrzepracowanychGodzin);
+           System.out.println("Imie " + imie + "Nazwisko "+ nazwisko + "wynagrodzenie " + wynagrodzenie);
 
 
 
