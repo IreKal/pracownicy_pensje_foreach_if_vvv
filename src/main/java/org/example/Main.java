@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
 //        Pracownik pracownik = new Pracownik("Jan", "Kowalski", 50, 100);
 //        System.out.println(pracownik.toString());
-        PracownikZNadgodzinami pracownikZN = new PracownikZNadgodzinami("Jan", "Kowalski", 50, 100, 30);
-        System.out.println(pracownikZN.toString());
+       //PracownikZNadgodzinami pracownikZN = new PracownikZNadgodzinami("Jan", "Kowalski", "50", "100", "30");
+     //   System.out.println(pracownikZN.toString());
         String anuluj ;
         anuluj = "anuluj";
         double wynagrodzenie;
@@ -38,10 +38,11 @@ public class Main {
 
             Scanner scan2 = new Scanner(System.in);
           stawkaZaGodzine = scan.nextDouble();
-          if (!stawkaZaGodzine.matches("[0-9]+")){
+          if (stawkaZaGodzine.matches("[0-9]+")) {
+          } else {
               System.out.println("Zle dane");
              }
-            if (stawkaZaGodzine.equals("anuluj")){
+          if (stawkaZaGodzine.equals("anuluj")){
               break;}
 
 

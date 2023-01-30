@@ -24,7 +24,7 @@ public class PracownikZNadgodzinami extends Pracownik {
     }
 
 
-     //  public double getInfo() {
+    //  public double getInfo() {
     // return wynagrodzenieZaNadgodziny = liczbaNadgodzin * stawkaZaGodzine ;
 
 
@@ -35,15 +35,8 @@ public class PracownikZNadgodzinami extends Pracownik {
                 ", nazwisko='" + nazwisko + '\'' +
                 ", stawkaZaGodzine=" + stawkaZaGodzine +
                 ", LiczbaPrzepracowanychGodzin=" + LiczbaPrzepracowanychGodzin +
-                 ",  wynagrodzeniePodstawowe=" + getInfoWp() +
-                 ", Wynagrodzenia z nadgodzin=" + getInfoWn() +
+                ",  wynagrodzeniePodstawowe=" + getInfoWp() +
+                ", Wynagrodzenia z nadgodzin=" + getInfoWn() +
                 '}';
     }
 }
-
-
-
-
-
-
-
