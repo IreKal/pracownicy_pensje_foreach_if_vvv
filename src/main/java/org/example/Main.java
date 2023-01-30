@@ -12,9 +12,9 @@ public class Main {
         String anuluj ;
         anuluj = "anuluj";
         double wynagrodzenie;
-        double stawkaZaGodzine;
-        double LiczbaPrzepracowanychGodzin;
-        wynagrodzenie = stawkaZaGodzine * LiczbaPrzepracowanychGodzin;
+        double stawkaZaGodzine = 0 ;
+        double LiczbaPrzepracowanychGodzin = 0  ;
+        wynagrodzenie = stawkaZaGodzine * LiczbaPrzepracowanychGodzin ;
 
       while(true){
 
@@ -22,7 +22,7 @@ public class Main {
 
             Scanner scan = new Scanner(System.in);
             String imie  = scan.nextLine();
-            if (imie != String){
+          if (!imie.matches("[a-zA-Z]+")){
             System.out.println("Zle dane");
             }
             if (imie.equals("anuluj")){
@@ -30,7 +30,7 @@ public class Main {
 
              Scanner scan1 = new Scanner(System.in);
              String nazwisko  = scan.nextLine();
-            if (nazwisko != String){
+          if (!nazwisko.matches("[a-zA-Z]+")){
             System.out.println("Zle dane");
             }
             if (nazwisko.equals("anuluj")){
@@ -38,7 +38,7 @@ public class Main {
 
             Scanner scan2 = new Scanner(System.in);
           stawkaZaGodzine = scan.nextDouble();
-             if (stawkaZaGodzine != double){
+          if (!stawkaZaGodzine.matches("[0-9]+")){
               System.out.println("Zle dane");
              }
             if (stawkaZaGodzine.equals("anuluj")){
@@ -47,7 +47,7 @@ public class Main {
 
             Scanner scan3 = new Scanner(System.in);
           LiczbaPrzepracowanychGodzin = scan.nextDouble();
-           if (LiczbaPrzepracowanychGodzin != double){
+          if (!LiczbaPrzepracowanychGodzin.matches("[0-9]+")){
               System.out.println("Zle dane");
            }
              if (LiczbaPrzepracowanychGodzin.equals("anuluj")){

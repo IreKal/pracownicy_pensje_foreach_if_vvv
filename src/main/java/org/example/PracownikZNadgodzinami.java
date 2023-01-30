@@ -3,8 +3,7 @@ package org.example;
 public class PracownikZNadgodzinami extends Pracownik {
     double liczbaNadgodzin;
 
-    double getInfoWn(){
-        return   liczbaNadgodzin * stawkaZaGodzine;
+    double getInfoWn(){return   liczbaNadgodzin * stawkaZaGodzine;
     }
 
     public PracownikZNadgodzinami(String imie, String nazwisko, double stawkaZaGodzine, double liczbaPrzepracowanychGodzin, double
